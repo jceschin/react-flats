@@ -7,17 +7,15 @@ class App extends Component {
     super(props);
 
     this.state = {
-      flats: flats
+      flats
     };
   }
 
   render () {
     return (
-      <div className="container">
-        <div className="left-scene">
-          <FlatList flats={this.state.flats} />
-        </div>
-        <div className="rigth-scene"></div>
+      <div>
+        <FlatList flats={this.state.flats} />
+        <div className="map-container"></div>
       </div>
     );
   }
